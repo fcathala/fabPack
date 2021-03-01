@@ -13,7 +13,7 @@ Although you may argue that this is a painful step, requiring computer troublesh
 
 To run fabAnt you must have the following installed on your computer:
 
-* [Java](https://www.azul.com/downloads/zulu-community/?package=jdk) ~ Attention [Oracle](https://www.oracle.com/uk/downloads/licenses/javase-license1.html) JDK is not Open Source anymore. There are some ways around but the best is to change sowftare altogether and go with [Azul](https://www.azul.com/products/zulu-enterprise/jdk-comparison-matrix/) for instance.
+* [Java](https://www.azul.com/downloads/zulu-community/?package=jdk) ~ Attention [Oracle](https://www.oracle.com/uk/downloads/licenses/javase-license1.html) JDK is not Open Source any more. There are some ways around it but the best is to change sowftare altogether and go with [Azul](https://www.azul.com/products/zulu-enterprise/jdk-comparison-matrix/) for instance.
 * [Ant](https://ant.apache.org/manual/install.html)
 * [Salesforce toolkit for Ant](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/forcemigrationtool_install.htm)
 * [fabAnt](https://github.com/fcathala/fabAnt/archive/master.zip) ~ Download both the PC and Mac versions
