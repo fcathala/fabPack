@@ -135,10 +135,8 @@ Leave fabAnt.
 * [Zulu (Java) download](https://www.azul.com/downloads/zulu-community/?package=jdk)
 * [Ant](https://ant.apache.org/manual/)
 * [Ant Salesforce Toolkit](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/forcemigrationtool_install.htm)
-* ⚠️ [Components Available in Change Sets](https://help.salesforce.com/articleView?id=sf.changesets_about_components.htm&type=5) + [Unsupported Metadata Types](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_unsupported_types.htm) + [Metadata Coverage](https://developer.salesforce.com/docs/metadata-coverage) + [Components Available in Managed Packages](https://help.salesforce.com/articleView?id=sf.packaging_packageable_components.htm&type=5)
+* [Components Available in Change Sets](https://help.salesforce.com/articleView?id=sf.changesets_about_components.htm&type=5) + [Unsupported Metadata Types](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_unsupported_types.htm) + [Metadata Coverage](https://developer.salesforce.com/docs/metadata-coverage) + [Components Available in Managed Packages](https://help.salesforce.com/articleView?id=sf.packaging_packageable_components.htm&type=5)
 * [Ant Migration Tool Guide](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/meta_development.htm)
 * [Metadata API Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_intro.htm)
 * [Blog post: 5 Steps to Salesforce Continuous Delivery that Works for You (No Expertise Required)](https://automationchampion.com/2019/08/10/app-review-5-steps-to-salesforce-continuous-delivery-that-works-for-you-no-expertise-required/)
 * [Blog post: Farewell package.xml](https://saramorgan.net/2021/02/22/farewell-package-xml-you-will-not-be-missed/)
-* 
-
