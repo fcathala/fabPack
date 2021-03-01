@@ -104,27 +104,27 @@ Validate the whole stack is correctly installed. Show some Environment Variable 
 
 ### (2) Retrieve metadata types
 
-Create a folder "**metadata\archive\%TimeStamp%-describeMetadata**" including the result file "**log.txt**" which contains the list of all metadata components supposed to be touched, hence requiring migration. **(this bit remains To Be Clarified)**
+Create a folder "metadata\archive\%TimeStamp%-describeMetadata" including the result file "log.txt" which contains the list of all metadata components supposed to be touched, hence requiring migration. (this bit remains To Be Clarified)
 
 ### (3) Download from manifest
 
-Use the "**package.xml**" stored in the "**metadata\temp**" folder to retrieve and download all components listed there. Download these components into the folder "**metadata\temp**" including the descriptif "**package.xml**". When done, create a folder "**metadata\archive\%TimeStamp%-retrieveCode**" including the result file "**log.txt**".
+Use the "package.xml" stored in the "metadata\temp" folder to retrieve and download all components listed there. Download these components into the folder "metadata\temp" including the descriptif "package.xml". When done, create a folder "metadata\archive\%TimeStamp%-retrieveCode" including the result file "log.txt".
 
 ### (4) Download from package
 
-Use the package name described in "**org.down.properties**" (example: #sf.pkgName = DailyCS) to retrieve and download all components listed there. Download these components into the folder "**metadata\temp**" including the descriptif "**package.xml**". When done, create a folder "**metadata\archive\%TimeStamp%-retrievePkg**" including the result file "**log.txt**".
+Use the package name described in "org.down.properties" (example: #sf.pkgName = DailyCS) to retrieve and download all components listed there. Download these components into the folder "metadata\temp" including the descriptif "package.xml". When done, create a folder "metadata\archive\%TimeStamp%-retrievePkg" including the result file "log.txt".
 
 ### (5) Validate on the target
 
-Expect to find in the "**metadata\temp**" folder the file "**package.xml**" and associated subfolder containing the components to deploy. Then, DO NOT deploy but only tests the deployment can happen without fault. When done, create a folder "**metadata\archive\%TimeStamp%-deployCodeCheckOnly**" including the result file "**log.txt**".
+Expect to find in the "metadata\temp" folder the file "package.xml" and associated subfolder containing the components to deploy. Then, DO NOT deploy but only tests the deployment can happen without fault. When done, create a folder "metadata\archive\%TimeStamp%-deployCodeCheckOnly" including the result file "log.txt".
 
 ### (6) Deploy on the target
 
-Expect to find in the "**metadata\temp**" folder the file "**package.xml**" and associated subfolder containing the components to deploy. When done, create a folder "**metadata\archive\%TimeStamp%-deployCode**" including the result file "**log.txt**" and a copy of the metadata just deployed.
+Expect to find in the "metadata\temp" folder the file "package.xml" and associated subfolder containing the components to deploy. When done, create a folder "metadata\archive\%TimeStamp%-deployCode" including the result file "log.txt" and a copy of the metadata just deployed.
 
 ### (7) Delete on the target
 
-Expect to find in the "**metadata\temp**" folder the files "**destructiveChanges.xml**" and "**package.xml**" containing the components to remove and, optionaly, the ones to deploy afterward. When done, create a folder "**metadata\archive\%TimeStamp%-undeployCode**" including the result file "**log.txt**".
+Expect to find in the "metadata\temp" folder the files "destructiveChanges.xml" and "package.xml" containing the components to remove and, optionaly, the ones to deploy afterward. When done, create a folder "metadata\archive\%TimeStamp%-undeployCode" including the result file "log.txt".
 
 ### (8) Quit
 
@@ -138,5 +138,5 @@ Leave fabAnt.
 * [Components Available in Change Sets](https://help.salesforce.com/articleView?id=sf.changesets_about_components.htm&type=5) + [Unsupported Metadata Types](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_unsupported_types.htm) + [Metadata Coverage](https://developer.salesforce.com/docs/metadata-coverage) + [Components Available in Managed Packages](https://help.salesforce.com/articleView?id=sf.packaging_packageable_components.htm&type=5)
 * [Ant Migration Tool Guide](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/meta_development.htm)
 * [Metadata API Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_intro.htm)
-* [Blog post: 5 Steps to Salesforce Continuous Delivery that Works for You (No Expertise Required)](https://automationchampion.com/2019/08/10/app-review-5-steps-to-salesforce-continuous-delivery-that-works-for-you-no-expertise-required/)
-* [Blog post: Farewell package.xml](https://saramorgan.net/2021/02/22/farewell-package-xml-you-will-not-be-missed/)
+* [**Blog post:** 5 Steps to Salesforce Continuous Delivery that Works for You (No Expertise Required)](https://automationchampion.com/2019/08/10/app-review-5-steps-to-salesforce-continuous-delivery-that-works-for-you-no-expertise-required/)
+* [**Blog post:** Farewell package.xml](https://saramorgan.net/2021/02/22/farewell-package-xml-you-will-not-be-missed/)
