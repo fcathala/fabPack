@@ -104,7 +104,7 @@ Validate the whole stack is correctly installed. Show some Environment Variable 
 
 ### (2) Retrieve metadata types
 
-Create a folder "metadata\archive\%TimeStamp%-describeMetadata" including the result file "log.txt" which contains the list of all metadata components supposed to be touched, hence requiring migration. (this bit remains To Be Clarified)
+Create a folder "metadata\archive\%TimeStamp%-describeMetadata" including the result file "log.txt" which contains the list of all metadata components supposed to be touched, hence requiring migration. (this bit remains "To Be Clarified")
 
 ### (3) Download from manifest
 
