@@ -13,22 +13,20 @@ Although you may argue that this is a painful step, requiring computer troublesh
 
 To run fabAnt you must have the following installed on your computer:
 
-* [Java](https://www.azul.com/downloads/zulu-community/?package=jdk) ~ Attention [Oracle](https://www.oracle.com/uk/downloads/licenses/javase-license1.html) JDK is not Open Source any more. There are some ways around it but the best is to change sowftare altogether and go with [Azul](https://www.azul.com/products/zulu-enterprise/jdk-comparison-matrix/) for instance.
+* [Java](https://www.azul.com/downloads/zulu-community/?package=jdk) ~ Attention [Oracle](https://www.oracle.com/uk/downloads/licenses/javase-license1.html) JDK is not Open Source any more. There are some ways around it but the best is to change sowftare altogether and go with [Azul](https://www.azul.com/products/zulu-enterprise/jdk-comparison-matrix/) for instance which is Salesforce's recommended Java Client for the Data Loader as well...
 * [Ant](https://ant.apache.org/manual/install.html)
 * [Salesforce toolkit for Ant](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/forcemigrationtool_install.htm)
 * [fabAnt](https://github.com/fcathala/fabAnt/archive/master.zip) ~ Download both the PC and Mac versions
 
 ## Project Configuration
 
-In the first versions (v1.x) I was trying to limit the installation of a single Salesforce Toolkit per computer (as there is a single install of Java or Ant). In the following version I have changed this architecture to come bak to something simpler to use. An install is now **Project Centric** and within a **Project** each folders must represent a pair of source and destination orgs. Example for a 4 orgs structure, you would have to configure your folders this way:
+In the first versions (v1.x) I was trying to limit the number of installation to a single Salesforce Toolkit per computer (as there is a single install of Java or Ant). In the following versions, I have changed this architecture to come bak to something simpler to use. As a result there will be quite a few duplicates but Salesforce manages old versions quite well, so no need to be stressed about that. An install is now **Project Centric** and within a **Project** each folder must represent a pair of source and destination orgs. Example for a 3 orgs structure, you would have to configure your folders this way:
 
 ```
-C:\USERS\<YOUR_NAME>\<PROJECT_NAME>\DEV-QA (~ PC or MAC)
+C:\USERS\<YOUR_NAME>\<PROJECT_NAME>\DEV-QA
 │   │   fabAnt.cmd
-│   │
 │   ├───jar
 │   │       ant-salesforce.jar
-│   │
 │   └───lib
 │           deployCode.cmd
 │           deployCodeCheckOnly.cmd
@@ -43,10 +41,8 @@ C:\USERS\<YOUR_NAME>\<PROJECT_NAME>\DEV-QA (~ PC or MAC)
 │
 └───QA-SIT
 │   │   fabAnt.cmd
-│   │
 │   ├───jar
 │   │       ant-salesforce.jar
-│   │
 │   └───lib
 │           deployCode.cmd
 │           deployCodeCheckOnly.cmd
@@ -61,11 +57,8 @@ C:\USERS\<YOUR_NAME>\<PROJECT_NAME>\DEV-QA (~ PC or MAC)
 │
 └───SIT-PROD
     ant-salesforce.jar
-    │
-    │
     ├───jar
     │       ant-salesforce.jar
-    │
     └───lib
             deployCode.cmd
             deployCodeCheckOnly.cmd
@@ -78,6 +71,10 @@ C:\USERS\<YOUR_NAME>\<PROJECT_NAME>\DEV-QA (~ PC or MAC)
             testInstallation.cmd
             undeployCode.cmd
 ```
+
+1. The folders "DEV-QA", "QA-SIT" and "SIT-PROD" should host 3 migrations from "DEV" to "QA", "SIT" and "PROD". You must configure the files "org.down.properties" and 
+"org.up.properties" accordingly (down = source, up = target). There is some room for flexibility here depenmding on how you are comfortable doing it. These folders contain a download from this Git repo which supports both PC and Mac, so you can simplify the folder structure as you prefer (I always get rid of the folder I am not using and move the content of the other to my orgs-duo root).
+2. In the "jar" folder you must copy the latest toolkit obtained from [Salesforce](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/forcemigrationtool_install.htm) (ant-salesforce.jar).
 
 ## User Guide
 
@@ -113,5 +110,6 @@ Please, type the selection number from 1 to 8.
 ### (6) Deploy on the target
 
 ### (7) Delete on the target
+
 ### (8) Quit
 
