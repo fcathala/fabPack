@@ -14,6 +14,7 @@ You must have the following installed on your PC
 
 ### User Guide
 
+```
 ----------------------------------------------------------
  fabPack - Packaging Utility for Salesforce Professionals
 ----------------------------------------------------------
@@ -30,7 +31,7 @@ You must have the following installed on your PC
 ----------------------------------------------------------
 
 Please, type the selection number from 1 to 8.
-
+```
 
 ### (1) Check installation
 
