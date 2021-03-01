@@ -22,6 +22,7 @@ To run fabAnt you must have the following installed on your computer:
 
 In the first versions (v1.x) I was trying to limit the installation of a single Salesforce Toolkit per computer (as there is a single install of Java or Ant). In the following version I have changed this architecture to come bak to something simpler to use. An install is now **Project Centric** and within a **Project** each folders must represent a pair of source and destination orgs. Example for a 4 orgs structure, you would have to configure your folders this way:
 
+```
 C:\USERS\<YOUR_NAME>\<PROJECT_NAME>\DEV-QA (~ PC or MAC)
 │   │   fabAnt.cmd
 │   │
@@ -76,6 +77,7 @@ C:\USERS\<YOUR_NAME>\<PROJECT_NAME>\DEV-QA (~ PC or MAC)
             retrievePkg.cmd
             testInstallation.cmd
             undeployCode.cmd
+```
 
 ## User Guide
 
