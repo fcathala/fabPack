@@ -14,7 +14,7 @@ You must have the following installed on your PC
 
 ### User Guide
 
-```
+```batch
 ----------------------------------------------------------
  fabPack - Packaging Utility for Salesforce Professionals
 ----------------------------------------------------------
