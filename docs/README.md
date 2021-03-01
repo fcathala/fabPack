@@ -72,8 +72,7 @@ C:\USERS\<YOUR_NAME>\<PROJECT_NAME>\DEV-QA
             undeployCode.cmd
 ```
 
-1. The folders "DEV-QA", "QA-SIT" and "SIT-PROD" should host 3 migrations from "DEV" to "QA", "SIT" and "PROD". You must configure the files "org.down.properties" and 
-"org.up.properties" accordingly (down = source, up = target). There is some room for flexibility here depenmding on how you are comfortable doing it. These folders contain a download from this Git repo which supports both PC and Mac, so you can simplify the folder structure as you prefer (I always get rid of the folder I am not using and move the content of the other to my orgs-duo root).
+1. The folders "**DEV-QA**", "**QA-SIT**" and "**SIT-PROD**" should host 3 migrations from "**DEV**" to "**QA**", "**SIT**" and "**PROD**". You must configure the files "org.down.properties" and "org.up.properties" accordingly (down = source, up = target). There is some room for flexibility here depenmding on how comfortable are you doing it. These folders contain a download from this Git repo which supports both PC and Mac, so you can simplify the folder structure as you prefer (I always get rid of the folder I am not using and move the content of the other to my orgs-duo root).
 2. In the "jar" folder you must copy the latest toolkit obtained from [Salesforce](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/forcemigrationtool_install.htm) (ant-salesforce.jar).
 
 ## User Guide
