@@ -98,17 +98,32 @@ Please, type the selection number from 1 to 8.
 
 ### (1) Check installation
 
+Validate the whole stack is correctly installed. Show some Environment Variable that are always good to check.
+
 ### (2) Retrieve metadata types
+
+Create a folder "**metadata\archive\%TimeStamp%-describeMetadata**" including the result file "**log.txt**" which contains the list of all metadata components supposed to be touched, hence requiring migration. **(this bit remains To Be Clarified)**
 
 ### (3) Download from manifest
 
+Use the "**package.xml**" stored in the "**metadata\temp**" folder to retrieve and download all components listed there. Download these components into the folder "**metadata\temp**" including the descriptif "**package.xml**". When done, create a folder "**metadata\archive\%TimeStamp%-retrieveCode**" including the result file "**log.txt**".
+
 ### (4) Download from package
+
+Use the package name described in "**org.down.properties**" (example: #sf.pkgName = DailyCS) to retrieve and download all components listed there. Download these components into the folder "**metadata\temp**" including the descriptif "**package.xml**". When done, create a folder "**metadata\archive\%TimeStamp%-retrievePkg**" including the result file "**log.txt**".
 
 ### (5) Validate on the target
 
+Expect to find in the "**metadata\temp**" folder the file "**package.xml**" and associated subfolder containing the components to deploy. Then, DO NOT deploy but only tests the deployment can happen without fault. When done, create a folder "**metadata\archive\%TimeStamp%-deployCodeCheckOnly**" including the result file "**log.txt**".
+
 ### (6) Deploy on the target
+
+Expect to find in the "**metadata\temp**" folder the file "**package.xml**" and associated subfolder containing the components to deploy. When done, create a folder "**metadata\archive\%TimeStamp%-deployCode**" including the result file "**log.txt**" and a copy of the metadata just deployed.
 
 ### (7) Delete on the target
 
+Expect to find in the "**metadata\temp**" folder the files "**destructiveChanges.xml**" and "**package.xml**" containing the components to remove and, optionaly, the ones to deploy afterward. When done, create a folder "**metadata\archive\%TimeStamp%-undeployCode**" including the result file "**log.txt**".
+
 ### (8) Quit
 
+Leave fabAnt.
