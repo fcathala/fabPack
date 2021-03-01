@@ -1,48 +1,42 @@
-## Welcome to GitHub Pages
+## fabAnt
 
-Branch = gh-pages; subfolder = docs.
+### First Installation
 
-| DNS ENTRY | TYPE |   DESTINATION   |
-| ----------------:| ---------------:|
-|     @     |   A  | 185.199.108.153 |
-|     @     |   A  | 185.199.109.153 |
-|     @     |   A  | 185.199.110.153 |
-|     @     |   A  | 185.199.111.153 |
+### Project Configuration
 
-Remove previous "@" record. Leave existing "*" record.
+### User Guide
 
-You can use the [editor on GitHub](https://github.com/fcathala/TestJekyll/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+----------------------------------------------------------
+ fabPack - Packaging Utility for Salesforce Professionals
+----------------------------------------------------------
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+ (1) Check installation
+ (2) Retrieve all supported metadata types
+ (3) Download components from manifest
+ (4) Download components from the package
+ (5) Validate components on the target
+ (6) Deploy components on the target
+ (7) Delete components on the target
+ (8) Quit
 
-### Markdown
+----------------------------------------------------------
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Please, type the selection number from 1 to 8.
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+### (1) Check installation
 
-- Bulleted
-- List
+### (2) Retrieve all supported metadata types
 
-1. Numbered
-2. List
+### (3) Download components from manifest
 
-**Bold** and _Italic_ and `Code` text
+### (4) Download components from the package
 
-[Link](url) and ![Image](src)
-```
+### (5) Validate components on the target
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### (6) Deploy components on the target
 
-### Jekyll Themes
+### (7) Delete components on the target
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/fcathala/TestJekyll/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### (8) Quit
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
