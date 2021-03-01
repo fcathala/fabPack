@@ -13,7 +13,7 @@ Although you may argue that this is a painful step, requiring computer troublesh
 
 To run fabAnt you must have the following installed on your computer:
 
-* [Java](https://www.azul.com/downloads/zulu-community/?package=jdk) ~ Attention [Oracle](https://www.oracle.com/uk/downloads/licenses/javase-license1.html) JDK is not Open Source any more. There are some ways around it but the best is to change sowftare altogether and go with [Azul](https://www.azul.com/products/zulu-enterprise/jdk-comparison-matrix/) for instance which is Salesforce's recommended Java Client for the Data Loader as well...
+* [Java](https://www.azul.com/downloads/zulu-community/?package=jdk) ~ Attention [Oracle](https://www.oracle.com/uk/downloads/licenses/javase-license1.html) JDK is not Open Source any more. There are some ways around it but the best is to change sowftare altogether and go with [Azul](https://www.azul.com/products/zulu-enterprise/jdk-comparison-matrix/) for instance which is Salesforce's recommended Java Client for the Data Loader as well... Also, you do need the JDK to run Ant, NOT the JRE.
 * [Ant](https://ant.apache.org/manual/install.html)
 * [Salesforce toolkit for Ant](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/forcemigrationtool_install.htm)
 * [fabAnt](https://github.com/fcathala/fabAnt/archive/master.zip) ~ Download both the PC and Mac versions
@@ -77,6 +77,8 @@ C:\USERS\<YOUR_NAME>\<PROJECT_NAME>\DEV-QA
 
 ## User Guide
 
+fabAnt really is just a script, wrapping all Ant calls into a simplified interface. Who say "simplified interface" says "less powerful", so it may be the case that you have to learn the whole Ant approach but at least this repo gives you an head start. Strangely version 1.x was more powerful but it was also more complex to hack into, so I decided to simplify the approach. Also, I'm wroking into a [CLI DX version](https://github.com/fcathala/fabDX), but this is not going to be the magical solution to move an org from a Production centric to Repository centric approach of Enterprise-Class application lifecycle management. I'll do my best to simplify things again.
+
 ```
 ----------------------------------------------------------
  fabPack - Packaging Utility for Salesforce Professionals
@@ -127,3 +129,16 @@ Expect to find in the "**metadata\temp**" folder the files "**destructiveChanges
 ### (8) Quit
 
 Leave fabAnt.
+
+## Useful Links
+
+* [Zulu (Java) download](https://www.azul.com/downloads/zulu-community/?package=jdk)
+* [Ant](https://ant.apache.org/manual/)
+* [Ant Salesforce Toolkit](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/forcemigrationtool_install.htm)
+* ⚠️ [Components Available in Change Sets](https://help.salesforce.com/articleView?id=sf.changesets_about_components.htm&type=5) + [Unsupported Metadata Types](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_unsupported_types.htm) + [Metadata Coverage](https://developer.salesforce.com/docs/metadata-coverage) + [Components Available in Managed Packages](https://help.salesforce.com/articleView?id=sf.packaging_packageable_components.htm&type=5)
+* [Ant Migration Tool Guide](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/meta_development.htm)
+* [Metadata API Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_intro.htm)
+* [Blog post: 5 Steps to Salesforce Continuous Delivery that Works for You (No Expertise Required)](https://automationchampion.com/2019/08/10/app-review-5-steps-to-salesforce-continuous-delivery-that-works-for-you-no-expertise-required/)
+* [Blog post: Farewell package.xml](https://saramorgan.net/2021/02/22/farewell-package-xml-you-will-not-be-missed/)
+* 
+
