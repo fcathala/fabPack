@@ -1,5 +1,9 @@
 # fabAnt
 
+*Packaging utility for Salesforce professionals - Fabrice Cathala
+
+---
+
 fabAnt is a script wrapper of Salesforce Ant Toolkit used to deploy from org to org, and sooner or later to production.
 It's based on Ant that it simplifies and documents. Salesforce release management currently requires a client to temporarly store the metadata to be shipped between orgs. There are no way do do an equivalent operation in the clouds.
 
