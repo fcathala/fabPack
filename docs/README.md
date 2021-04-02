@@ -20,7 +20,7 @@ To run fabAnt you must have the following installed on your computer:
 * [Java](https://www.azul.com/downloads/zulu-community/?package=jdk) ~ Attention [Oracle](https://www.oracle.com/uk/downloads/licenses/javase-license1.html) JDK is not Open Source any more. There are some ways around it but the best is to change sowftare altogether and go with [Azul](https://www.azul.com/products/zulu-enterprise/jdk-comparison-matrix/) for instance which is Salesforce's recommended Java Client for the Data Loader as well... Also, you do need the JDK to run Ant, NOT the JRE.
 * [Ant](https://ant.apache.org/manual/install.html)
 * [Salesforce toolkit for Ant](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/forcemigrationtool_install.htm)
-* [fabAnt](https://github.com/fcathala/fabAnt/archive/master.zip) ~ Download both the PC and Mac versions
+* [fabAnt](https://github.com/fcathala/fabAnt/archive/refs/heads/main.zip) ~ Download both the PC and Mac versions
 
 ## Project Configuration
 
